@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh- tw">
+    <head>
+        <meta charset="utf-8">
+        <title>ch9-13.html</title>
+    </head>
+    <body>
+        <form action="cgi-bin/get.exe" method="get" >
+            <h1>市場調查</h1>
+            <p>個人資料</p>
+            <label><p>name: <input type="text" name="user" autofocus> </p></label>
+            <!-- age gender-->
+            <p>gender: <br>
+                <input type = "radio" name="sex" value="1" id = "M" checked>
+                <label for="M">boy</label>
+                <input type = "radio" name="sex" value="0" id = "F">girl<br>
+                <label for="F">girl</label>
+            </p>
+            <!-- feedback -->
+            <p>feedback</p>
+            <p><textarea name="option1" cols="30" rows="5"></textarea></p>
+            <p>default size</p>
+            <p><textarea name="option2"></textarea></p>
+            <!-- skills -->
+             <p>skills<br>
+                <input type="checkbox" name="softw" value="html" id="HT">
+                <label for="HT">HTML5</label>
+                <input type="checkbox" name="softw" value="css" id="CS">
+                <label for="CS">HTML5</label>
+            </p>
+        </form>
+    </body>
+</html>

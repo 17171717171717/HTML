@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>ch33_70.html</title> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+   <h4>彈出框Popover</h4>
+   <p>彈出框預設在右邊.</p>
+   <p>可以使用data-placement更改預設</p>
+   <a href="#" title="深智" data-toggle="popover" 
+    data-placement="top" data-content="Deepen your mind">上</a>
+   <a href="#" title="深智" data-toggle="popover" 
+    data-placement="bottom" data-content="Deepen your mind">下</a>
+   <a href="#" title="深智" data-toggle="popover" 
+    data-placement="left" data-content="Deepen your mind">左</a>
+   <a href="#" title="深智" data-toggle="popover" 
+    data-placement="right" data-content="Deepen your mind">右</a>
+</div>
+<script>
+$(document).ready(function(){
+   $('[data-toggle="popover"]').popover();   
+});
+</script>
+</body>
+</html>

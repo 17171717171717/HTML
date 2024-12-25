@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh- tw">
+    <head>
+        <meta charset="utf-8">
+        <title>ch9-3.html</title>
+    </head>
+    <body>
+        <form action="cgi-bin/get.exe" method="get">
+            <h1>self info</h1>
+            <p>phone <input type="tel" name="phone" autofocus placeholder="09xxx"></p>
+            <!--gender-->
+            <p>gender:<br>
+                <input type="radio" name="sex" value="1">boy <br>
+                <input type="radio" name="sex" value="0">girl 
+            </p>
+            <!--age select-->
+            <p>age:<br>
+            <input type="number" name="num" min="1">
+
+            </p>
+            <!--checkbox-->
+            <p>sw skill
+            
+            <input type="checkbox" name="sw" value="HTML" checked> HTML<br>
+            <input type="checkbox" name="sw" value="CSS" > CSS <br>
+            <input type="checkbox" name="sw" value="JS" >JS<br>
+            <input type="checkbox" name="sw" value="JQ" > JQ <br>
+            </p>
+            
+        </form>
+    </body>
+</html>

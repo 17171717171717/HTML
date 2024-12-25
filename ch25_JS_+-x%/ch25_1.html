@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>ch25_1.html</title> 
+   <script>
+      function toggleText() {
+         var paragraph = document.getElementById("ex");
+         var button = document.getElementById("toggleButton");
+         if (paragraph.innerHTML === "HTML5+CSS3") {
+            paragraph.innerHTML = "JavaScript";
+            button.innerHTML = "Reset";
+         } else {
+            paragraph.innerHTML = "HTML5+CSS3";
+            button.innerHTML = "OK";
+         }
+      }
+   </script>	  
+</head>
+<body>
+<p id="ex">HTML5+CSS3</p>
+<button id="toggleButton" type="button" onclick="toggleText()">OK</button>
+</body>
+</html>

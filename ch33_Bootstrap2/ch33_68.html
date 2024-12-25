@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>ch33_68.html</title> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+   <h3>Tooltip提示功能</h3>
+   <p>By default, the popover will appear on the right side of the element.</p>
+   <p>Use the data-placement attribute to set the position of the popover on top, bottom, left or the right side of the element.</p>
+   <p>Note: The placement attributes do not work if it is not enough room for them. For example, try to remove these paragraphs and click on the "Top" popover to understand how it works.</p>
+   <a href="#" data-toggle="tooltip" data-placement="top" title="top">上</a>
+   <a href="#" data-toggle="tooltip" data-placement="bottom" title="bottom">下</a>
+   <a href="#" data-toggle="tooltip" data-placement="left" title="left">左</a>
+   <a href="#" data-toggle="tooltip" data-placement="right" title="right">右</a>
+</div>
+<script>
+   $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+   });
+</script>
+</body>
+</html>

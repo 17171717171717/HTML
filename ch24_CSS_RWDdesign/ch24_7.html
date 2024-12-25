@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ch24_7.html</title>
+   <style>
+       *{ /*padding and border are included by width and height*/
+		box-sizing: border-box;
+	   }
+	   .row::after{ /* add space under the row */
+		content:"";
+		clear:left;
+		display:table;
+	   } 
+	   [class*="col-"]{ /*all the CSS*/
+		float: left;
+		padding: 15px;
+		width: 100%;
+	   }
+
+		/*defalut phone screen*/
+	   @media only screen and (min-width: 481px){ /*平板的@media*/
+		.cols-s-25{width:25%;} 		/* for nav */
+		.cols-s-75{width:75%;} 		/* for article */
+		.cols-s-100{width:100%;}	/* for aside */
+	   }
+	   @media only screen and (min-width: 769px){ /* for PC */
+		.cols-s-25{width:25%;} 		/* for nav and aside */
+		.cols-s-75{width:75%;} 		/* for article */
+	   }
+	   
+	   html{ /* html */
+		font-family: Helvetica, sans-serif;
+	   }
+
+	   header{	/* header */
+		background-color: aqua;
+		color:blue;
+		padding:15px;
+	   }
+	   .menu ul{	/* the ul in menu */
+		margin:0;
+		padding:0;
+		list-style-type: none;
+	   }
+
+	   .menu li{	/* the li in menu */
+		background-color: deepskyblue;
+		color:white;
+		padding: 5px;
+		margin-bottom: 5px;
+		box-shadow:gray 1px 2px 2px;
+	   }
+
+	   .menu li:hover{ 	/* hover li in menu */
+		background-color: darkblue;
+	   }
+
+	   aside{	/*  */
+		background-color: deepskyblue;
+		color: white;
+		float:right;
+		padding: 15px;
+		text-align: center;
+		font-size: 15px;
+		box-shadow: gray 3px 3px 3px;
+	   }
+
+	   footer{	/*  */
+		background-color: lightgray;
+		color:blue;
+		text-align: center;
+		font-size: 18px;
+		padding:15px;
+	   }
+	   img{	/*  */
+		max-width: 100%;
+		height:auto;
+	   }
+
+   </style>   
+</head>
+<body>
+	<header> 
+		<h1>first</h1>
+		<p>deep learning</p>
+	</header>
+	
+	<div class="row">
+		<nav class="col-25 col-s-25 menu">
+			<ul>
+				<li>SS1</li>
+				<li>SS2</li>
+				<li>SS3</li>
+				<li>SS4</li>
+			</ul>
+		</nav>
+		
+		<article class="col-50 col-s-75">
+			<h1> learn </h1>
+			<p>12345677900000000000</p>
+			<img src="mybook.jpg" width="300">
+		</article>
+
+		<div class="col-25 col-s-100">
+			<aside>
+				<h2>aside</h2>
+				<p>12345</p>
+				<h2>ss2</h2>
+				<p>12345</p>
+				<h2>ss2</h2>
+				<p>12345</p>
+			</aside>
+		</div>
+		<footer>
+			<p>foot</p>
+		</footer>
+
+	</div>
+</body>
+</html>

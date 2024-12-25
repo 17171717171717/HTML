@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh- tw">
+    <head>
+        <meta charset="utf-8">
+        <title>ch9-13.html</title>
+    </head>
+    <body>
+        <form action="cgi-bin/formsample.php" method="post" enctype="multipart/form-data">
+            <h1>市場調查</h1>
+            <p>個人資料</p>
+            <p>name: <input type="text" name="user" autofocus> </p>
+            <!-- age gender-->
+            <p>gender: <br>
+                <input type = "radio" name="sex" value="1" checked>boy<br>
+                <input type = "radio" name="sex" value="0" >girl<br>
+            </p>
+            <!-- feedback -->
+            <p>feedback</p>
+            <p><textarea name="option1" cols="30" rows="5"></textarea></p>
+            <p>default size</p>
+            <p><textarea name="option2"></textarea></p>
+        </form>
+    </body>
+</html>
